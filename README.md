@@ -15,7 +15,7 @@ I build local-first tools, odd experiments, and things that probably shouldn't e
 
 **TerraByte** &nbsp;·&nbsp; `T8` &nbsp;·&nbsp; technologist, tinkerer, perpetual builder.
 
-**web · desktop · AI · automation · games** — I make things that run **local-first, offline, and yours**, mostly because I think they should exist.
+**web · desktop · AI · automation · games** — I make things.
 
 <br>
 
