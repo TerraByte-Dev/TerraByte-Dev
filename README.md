@@ -6,7 +6,6 @@
 
 <div align="center">
 
-<img src="assets/logo-glow-256.png?v=1" width="138" alt="TerraByte" />
 
 <img src="assets/hero-dark.svg?v=3" alt="TERRABYTE — technologist, builder, jack of all trades" width="100%">
 
