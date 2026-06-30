@@ -1,0 +1,47 @@
+name: regen-hero
+
+# Self-rewriting hero: redraws both realities (neon + blueprint) every day so the
+# profile is never the same twice — generative starfield reseeds, DAY counter ticks,
+# blueprint REV date updates. Bumps the README cache-bust so GitHub's image proxy
+# refetches. Runs on a schedule, on manual dispatch, and whenever the generator changes.
+on:
+  schedule:
+    - cron: "17 7 * * *"      # daily, ~07:17 UTC
+  workflow_dispatch:
+  push:
+    paths:
+      - gen_hero.py
+      - assets/wordmarks.json
+      - .github/workflows/regen-hero.yml
+
+permissions:
+  contents: write
+
+concurrency:
+  group: regen-hero
+  cancel-in-progress: false
+
+jobs:
+  regen:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Redraw both realities (today's seed / uptime / rev)
+        run: python gen_hero.py
+      - name: Commit if the system changed
+        run: |
+          DAY=$(date -u +%Y%m%d)
+          sed -i -E "s/hero-(online|blueprint)\.svg\?v=[0-9A-Za-z]+/hero-\1.svg?v=$DAY/g" README.md
+          if [ -n "$(git status --porcelain)" ]; then
+            git config user.name "terrabyte-bot"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add -A
+            git commit -m "chore: self-rewrite hero $DAY [skip ci]"
+            git push
+            echo "hero redrawn for $DAY"
+          else
+            echo "no change today"
+          fi
