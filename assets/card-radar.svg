@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 116" width="900" height="116" font-family="ui-monospace,'IBM Plex Mono',SFMono-Regular,Menlo,Consolas,monospace" role="img" aria-label="RADAR — Local-first project radar — every project is a blip on a CRT scope.">
+  <defs>
+    <style>
+      @keyframes p { 0%,100%{opacity:.5} 50%{opacity:1} }
+      .dot { animation:p 1.8s ease-in-out infinite }
+      @keyframes bar { 0%,100%{opacity:.6} 50%{opacity:1} }
+      .accent { animation:bar 2.6s ease-in-out infinite }
+      @media (prefers-reduced-motion: reduce){ .dot,.accent{animation:none} }
+    </style>
+    <filter id="g" x="-40%" y="-40%" width="180%" height="180%" color-interpolation-filters="sRGB">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="1" result="a"/><feGaussianBlur in="SourceGraphic" stdDeviation="3.5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="a"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <pattern id="sc" width="3" height="3" patternUnits="userSpaceOnUse"><rect width="3" height="1" fill="#000" fill-opacity="0.30"/></pattern>
+  </defs>
+  <rect x="1" y="1" width="898" height="114" rx="3" fill="#020503" stroke="#02EEAA" stroke-width="1" stroke-opacity="0.28"/>
+  <rect class="accent" x="1" y="1" width="5" height="114" rx="2" fill="#02EEAA" filter="url(#g)"/>
+  <text x="30" y="38" fill="#2f6f4e" font-size="14" letter-spacing="3">02</text>
+  <circle class="dot" cx="34" cy="80" r="4" fill="#02EEAA" filter="url(#g)"/>
+  <text x="74" y="48" fill="#02EEAA" font-size="27" letter-spacing="1.5" filter="url(#g)">RADAR</text>
+  <text x="74" y="80" fill="#9BF5B8" font-size="15.5" letter-spacing="0.4">Local-first project radar — every project is a blip on a CRT scope.</text>
+  <g transform="translate(750,34)">
+    <rect x="0" y="0" width="118" height="26" rx="3" fill="#04090a" stroke="#02EEAA" stroke-width="1" stroke-opacity="0.35"/>
+    <text x="59" y="18" text-anchor="middle" fill="#9BF5B8" font-size="13" letter-spacing="2">TypeScript</text>
+  </g>
+  <text x="870" y="92" text-anchor="end" fill="#02EEAA" font-size="18" filter="url(#g)" opacity="0.9">&#8599;</text>
+  <rect x="1" y="1" width="898" height="114" rx="3" fill="url(#sc)"/>
+</svg>

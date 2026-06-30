@@ -33,18 +33,17 @@ I build local-first tools, odd experiments, and things that probably shouldn't e
 
 ## Stack
 
-![TypeScript](https://img.shields.io/badge/TypeScript-020503?style=flat-square&logo=typescript&logoColor=02EEAA) ![Python](https://img.shields.io/badge/Python-020503?style=flat-square&logo=python&logoColor=02EEAA) ![Astro](https://img.shields.io/badge/Astro-020503?style=flat-square&logo=astro&logoColor=02EEAA) ![React](https://img.shields.io/badge/React-020503?style=flat-square&logo=react&logoColor=02EEAA) ![Node.js](https://img.shields.io/badge/Node.js-020503?style=flat-square&logo=nodedotjs&logoColor=02EEAA) ![Electron](https://img.shields.io/badge/Electron-020503?style=flat-square&logo=electron&logoColor=02EEAA)
-
-![Tailwind CSS](https://img.shields.io/badge/Tailwind-020503?style=flat-square&logo=tailwindcss&logoColor=02EEAA) ![Vercel](https://img.shields.io/badge/Vercel-020503?style=flat-square&logo=vercel&logoColor=02EEAA) ![Cloudflare](https://img.shields.io/badge/Cloudflare-020503?style=flat-square&logo=cloudflare&logoColor=02EEAA) ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-020503?style=flat-square&logo=postgresql&logoColor=02EEAA) ![n8n](https://img.shields.io/badge/n8n-020503?style=flat-square&logo=n8n&logoColor=02EEAA) ![AI / LLM](https://img.shields.io/badge/AI%20%2F%20LLM-020503?style=flat-square&logo=anthropic&logoColor=02EEAA)
+<img src="assets/stack.svg?v=1" alt="Stack — TypeScript · Python · Lua · C# · Astro · React · Node.js · Electron · Tailwind · Vercel · Cloudflare · PostgreSQL · n8n · LLMs" width="100%">
 
 ## Selected work
 
-|   |   |
-|---|---|
-| **[OpenEdu](https://github.com/TerraByte-Dev/OpenEdu)** | Open-source AI tutoring platform — learn anything from absolute beginner. `TypeScript` |
-| **[RADAR](https://github.com/TerraByte-Dev/RADAR)** | Local-first project radar — every project is a blip on a CRT scope. `TypeScript` |
-| **[TerraPlayer](https://github.com/TerraByte-Dev/TerraPlayer)** | Offline desktop music player — no internet required. `TypeScript` |
-| **[hinge-auto](https://github.com/TerraByte-Dev/hinge-auto)** | Emulator + ADB + vision-LLM experiment that judges profiles against a rubric. `Python` |
+[![OpenEdu — open-source AI tutoring platform](assets/card-openedu.svg?v=1)](https://github.com/TerraByte-Dev/OpenEdu)
+
+[![RADAR — local-first project radar](assets/card-radar.svg?v=1)](https://github.com/TerraByte-Dev/RADAR)
+
+[![TerraPlayer — offline desktop music player](assets/card-terraplayer.svg?v=1)](https://github.com/TerraByte-Dev/TerraPlayer)
+
+[![hinge-auto — emulator + vision-LLM experiment](assets/card-hinge-auto.svg?v=1)](https://github.com/TerraByte-Dev/hinge-auto)
 
 ## Connect
 
@@ -65,11 +64,12 @@ I build local-first tools, odd experiments, and things that probably shouldn't e
 
 <br>
 
-`you found the hidden panel. respect.`
+**How this profile is built** — no third-party widgets, all hand-rolled:
 
-most people don't poke at READMEs — you did. that's the whole vibe. if you're building
-something strange and local-first, we'd probably get along.
+- **Two realities** — `<picture>` + `prefers-color-scheme` swaps the hero by your theme: neon system (dark) ↔ engineering blueprint (light).
+- **Self-rewriting** — a GitHub Action re-runs a Python generator daily; the starfield reseeds, the `DAY` counter ticks, the blueprint `REV` updates. Never the same twice.
+- **Every visual is generated SVG** — the hero, the stack panel and the project cards are hand-built animated SVG (vectorized VT323 paths, SVG filters, SMIL), not images of badges.
 
-<sub>— TerraByte</sub>
+Source → [`gen_hero.py`](gen_hero.py) · [`gen_body.py`](gen_body.py) · [`regen-hero.yml`](.github/workflows/regen-hero.yml)
 
 </details>

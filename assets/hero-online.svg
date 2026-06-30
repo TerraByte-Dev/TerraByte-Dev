@@ -10,7 +10,11 @@
   @keyframes pulse { 0%,100%{opacity:.85} 50%{opacity:1} }
   @keyframes drawline { from{stroke-dashoffset:300} to{stroke-dashoffset:0} }
   @keyframes dash { to { stroke-dashoffset: -16 } }
+  @keyframes veil { 0%{opacity:1} 20%{opacity:1} 55%{opacity:0} 100%{opacity:0} }
+  @keyframes flash { 0%{opacity:0} 6%{opacity:.7} 12%{opacity:.15} 20%{opacity:.5} 48%{opacity:0} 100%{opacity:0} }
   .screen{animation:flick 7s steps(1) infinite}
+  .veil{animation:veil 1.2s ease-out 1 both}
+  .flash{animation:flash 1.7s ease-out 1 both}
   .wm{animation:glitch 6.5s ease-in-out infinite}
   .wm-r{animation:ghostR 6.5s ease-in-out infinite}
   .wm-c{animation:ghostC 6.5s ease-in-out infinite}
@@ -20,6 +24,7 @@
   .march{stroke-dasharray:6 4;animation:dash 1.4s linear infinite}
   @media (prefers-reduced-motion: reduce){
     .screen,.wm,.wm-r,.wm-c,.sweep,.core,.rule,.march{animation:none}
+    .veil,.flash{display:none}
     .wm-r,.wm-c,.sweep{opacity:0}.rule{stroke-dashoffset:0}
   }
 </style>
@@ -125,4 +130,5 @@
     <rect class="sweep" x="0" y="0" width="1280" height="26" fill="url(#sweepg)"/>
   </g>
   <rect width="1280" height="420" fill="url(#scan)"/><rect width="1280" height="420" fill="url(#vig)"/>
+  
 </svg>
