@@ -14,6 +14,15 @@
 
 I build local-first tools, odd experiments, and things that probably shouldn't exist — for the love of it.
 
+<details>
+<summary>◹ &nbsp; flip to schematic</summary>
+
+<img src="assets/hero-blueprint.svg?v=20260630" alt="TERRABYTE — blueprint reality" width="100%">
+
+<sub>the same machine, drafted — it's also what visitors on a light theme see up top.</sub>
+
+</details>
+
 </div>
 
 **TerraByte** &nbsp;·&nbsp; `T8` &nbsp;·&nbsp; technologist, tinkerer, perpetual builder.
@@ -50,3 +59,17 @@ I build local-first tools, odd experiments, and things that probably shouldn't e
 <sub>local-first · built for the love of it</sub>
 
 </div>
+
+<details>
+<summary><sub>· · ·</sub></summary>
+
+<br>
+
+`you found the hidden panel. respect.`
+
+most people don't poke at READMEs — you did. that's the whole vibe. if you're building
+something strange and local-first, we'd probably get along.
+
+<sub>— TerraByte</sub>
+
+</details>
