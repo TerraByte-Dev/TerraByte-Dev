@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 192" width="900" height="192" font-family="ui-monospace,'IBM Plex Mono',SFMono-Regular,Menlo,Consolas,monospace" role="img" aria-label="stack">
+  <defs>
+    <style>
+      @keyframes p { 0%,100%{opacity:.5} 50%{opacity:1} }
+      .dot { animation:p 1.8s ease-in-out infinite }
+      @keyframes bar { 0%,100%{opacity:.6} 50%{opacity:1} }
+      .accent { animation:bar 2.6s ease-in-out infinite }
+      @media (prefers-reduced-motion: reduce){ .dot,.accent{animation:none} }
+    </style>
+    <filter id="g" x="-40%" y="-40%" width="180%" height="180%" color-interpolation-filters="sRGB">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="1" result="a"/><feGaussianBlur in="SourceGraphic" stdDeviation="3.5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="a"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <pattern id="sc" width="3" height="3" patternUnits="userSpaceOnUse"><rect width="3" height="1" fill="#000" fill-opacity="0.30"/></pattern>
+  </defs>
+  <rect x="1" y="1" width="898" height="190" rx="3" fill="#020503" stroke="#02EEAA" stroke-width="1" stroke-opacity="0.22"/>
+  <rect class="accent" x="1" y="1" width="5" height="190" rx="2" fill="#02EEAA" filter="url(#g)"/>
+  <text x="30" y="32" fill="#02EEAA" font-size="16" letter-spacing="4" filter="url(#g)">STACK</text>
+  <line x1="30" y1="42" x2="870" y2="42" stroke="#02EEAA" stroke-width="1" stroke-opacity="0.18"/>
+  <text x="34" y="56" fill="#2f6f4e" font-size="13" letter-spacing="3">LANGUAGES</text>
+  <g transform="translate(190,37)"><rect width="108" height="27" rx="3" fill="#04090a" stroke="#02EEAA" stroke-width="1" stroke-opacity="0.30"/><text x="54" y="18" text-anchor="middle" fill="#9BF5B8" font-size="13.5" letter-spacing="1">TypeScript</text></g>
+  <g transform="translate(310,37)"><rect width="71" height="27" rx="3" fill="#04090a" stroke="#02EEAA" stroke-width="1" stroke-opacity="0.30"/><text x="36" y="18" text-anchor="middle" fill="#9BF5B8" font-size="13.5" letter-spacing="1">Python</text></g>
+  <g transform="translate(393,37)"><rect width="44" height="27" rx="3" fill="#04090a" stroke="#02EEAA" stroke-width="1" stroke-opacity="0.30"/><text x="22" y="18" text-anchor="middle" fill="#9BF5B8" font-size="13.5" letter-spacing="1">Lua</text></g>
+  <g transform="translate(449,37)"><rect width="34" height="27" rx="3" fill="#04090a" stroke="#02EEAA" stroke-width="1" stroke-opacity="0.30"/><text x="17" y="18" text-anchor="middle" fill="#9BF5B8" font-size="13.5" letter-spacing="1">C#</text></g>
+  <text x="34" y="96" fill="#2f6f4e" font-size="13" letter-spacing="3">FRAMEWORKS</text>
+  <g transform="translate(190,77)"><rect width="62" height="27" rx="3" fill="#04090a" stroke="#02EEAA" stroke-width="1" stroke-opacity="0.30"/><text x="31" y="18" text-anchor="middle" fill="#9BF5B8" font-size="13.5" letter-spacing="1">Astro</text></g>
+  <g transform="translate(264,77)"><rect width="62" height="27" rx="3" fill="#04090a" stroke="#02EEAA" stroke-width="1" stroke-opacity="0.30"/><text x="31" y="18" text-anchor="middle" fill="#9BF5B8" font-size="13.5" letter-spacing="1">React</text></g>
+  <g transform="translate(338,77)"><rect width="80" height="27" rx="3" fill="#04090a" stroke="#02EEAA" stroke-width="1" stroke-opacity="0.30"/><text x="40" y="18" text-anchor="middle" fill="#9BF5B8" font-size="13.5" letter-spacing="1">Node.js</text></g>
+  <g transform="translate(430,77)"><rect width="90" height="27" rx="3" fill="#04090a" stroke="#02EEAA" stroke-width="1" stroke-opacity="0.30"/><text x="45" y="18" text-anchor="middle" fill="#9BF5B8" font-size="13.5" letter-spacing="1">Electron</text></g>
+  <g transform="translate(532,77)"><rect width="90" height="27" rx="3" fill="#04090a" stroke="#02EEAA" stroke-width="1" stroke-opacity="0.30"/><text x="45" y="18" text-anchor="middle" fill="#9BF5B8" font-size="13.5" letter-spacing="1">Tailwind</text></g>
+  <text x="34" y="136" fill="#2f6f4e" font-size="13" letter-spacing="3">INFRA / AI</text>
+  <g transform="translate(190,117)"><rect width="71" height="27" rx="3" fill="#04090a" stroke="#02EEAA" stroke-width="1" stroke-opacity="0.30"/><text x="36" y="18" text-anchor="middle" fill="#9BF5B8" font-size="13.5" letter-spacing="1">Vercel</text></g>
+  <g transform="translate(273,117)"><rect width="108" height="27" rx="3" fill="#04090a" stroke="#02EEAA" stroke-width="1" stroke-opacity="0.30"/><text x="54" y="18" text-anchor="middle" fill="#9BF5B8" font-size="13.5" letter-spacing="1">Cloudflare</text></g>
+  <g transform="translate(393,117)"><rect width="108" height="27" rx="3" fill="#04090a" stroke="#02EEAA" stroke-width="1" stroke-opacity="0.30"/><text x="54" y="18" text-anchor="middle" fill="#9BF5B8" font-size="13.5" letter-spacing="1">PostgreSQL</text></g>
+  <g transform="translate(513,117)"><rect width="44" height="27" rx="3" fill="#04090a" stroke="#02EEAA" stroke-width="1" stroke-opacity="0.30"/><text x="22" y="18" text-anchor="middle" fill="#9BF5B8" font-size="13.5" letter-spacing="1">n8n</text></g>
+  <g transform="translate(569,117)"><rect width="53" height="27" rx="3" fill="#04090a" stroke="#02EEAA" stroke-width="1" stroke-opacity="0.30"/><text x="26" y="18" text-anchor="middle" fill="#9BF5B8" font-size="13.5" letter-spacing="1">LLMs</text></g>
+  <rect x="1" y="1" width="898" height="190" rx="3" fill="url(#sc)"/>
+</svg>

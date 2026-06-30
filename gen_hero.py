@@ -134,6 +134,8 @@ def build(mode, seed, uptime, date, featured):
     p = PAL[mode]; col = p["line"]; ink = p["ink"]; faint = p["faint"]
     bloom = ' filter="url(#bloom)"' if p["glow"] else ''
     soft = ' filter="url(#soft)"' if p["glow"] else ''
+    screen_cls = ""
+    flash_rect = ""   # cinematic boot dropped: CSS overlays/effects are unreliable in SVG-as-img
 
     # backgrounds / overlays differ per mode
     if mode == "online":
@@ -201,7 +203,7 @@ def build(mode, seed, uptime, date, featured):
     <mask id="spotmask"><rect width="{W}" height="{H}" fill="url(#spot)"/></mask>
   </defs>
   {bg}
-  <g class="screen">
+  <g class="screen{screen_cls}">
     {deco_back}
     <g{bloom}>
       <circle cx="{gcx}" cy="{gcy}" r="{R}" fill="none" stroke="{col}" stroke-width="2"/>
@@ -218,6 +220,7 @@ def build(mode, seed, uptime, date, featured):
     {sweep}
   </g>
   {overlays}
+  {flash_rect}
 </svg>
 '''
 
