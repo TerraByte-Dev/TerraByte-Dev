@@ -55,12 +55,6 @@ I build local-first tools, odd experiments, and things that probably shouldn't e
 
 <br>
 
-**How this profile is built** — no third-party widgets, all hand-rolled:
-
-- **Two realities** — `<picture>` + `prefers-color-scheme` swaps the hero by your theme: neon system (dark) ↔ engineering blueprint (light).
-- **Self-rewriting** — a GitHub Action re-runs a Python generator daily; the starfield reseeds, the `DAY` counter ticks, the blueprint `REV` updates. Never the same twice.
-- **Every visual is generated SVG** — the hero, the stack panel and the project cards are hand-built animated SVG (vectorized VT323 paths, SVG filters, SMIL), not images of badges.
-
-Source → [`gen_hero.py`](gen_hero.py) · [`gen_body.py`](gen_body.py) · [`regen-hero.yml`](.github/workflows/regen-hero.yml)
+<div align="center"><img src="assets/rickroll.gif" width="300" alt="never gonna give you up" /></div>
 
 </details>
