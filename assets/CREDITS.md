@@ -1,10 +1,9 @@
 # Credits — TERRABYTE.SYS profile
 
-- **Hero wordmark** — [VT323](https://fonts.google.com/specimen/VT323) by The VT323 Project Authors,
-  SIL Open Font License 1.1. Glyphs vectorized to SVG `<path>` data for sandbox-safe rendering on
-  GitHub (no external font fetch). No font binary is redistributed.
+- **Animated hero** (`hero-wow.svg`) — a rotating phosphor wireframe globe (the TerraByte mark)
+  with a glowing trident-T core, orbiting satellite, CRT scan-sweep, periodic RGB-split glitch,
+  and triple-stack bloom. Pure SVG (SMIL + internal CSS); honors prefers-reduced-motion.
+- **Wordmark** — [VT323](https://fonts.google.com/specimen/VT323) (SIL OFL 1.1) vectorized to SVG
+  `<path>` data for sandbox-safe rendering on GitHub. No font binary redistributed.
 - **UI / mono type** — IBM Plex Mono (OFL), Share Tech Mono (OFL).
-- **Logo** — the official TerraByte globe-T mark (`#02EEAA`), with an added phosphor bloom.
-- **Design system** — TERRABYTE.SYS: mint phosphor on void `#000`, triple-stack CRT bloom
-  (SVG feGaussianBlur + feMerge), terminal typography. Only animated element: the blinking caret
-  (honors prefers-reduced-motion).
+- **Mint** — `#02EEAA`, sampled from the official TerraByte logo. Void `#000`.
