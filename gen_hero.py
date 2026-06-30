@@ -63,12 +63,14 @@ def latitudes(col, glow):
     return "\n      ".join(out)
 
 def core_T(col):
+    cx, cy = gcx, gcy
     return (f'<g fill="{col}">'
-            f'<rect x="{gcx-74}" y="{gcy-52}" width="148" height="15" rx="7"/>'
-            f'<path d="M {gcx-10} {gcy-50} L {gcx+10} {gcy-50} L {gcx+4} {gcy+78} L {gcx} {gcy+104} L {gcx-4} {gcy+78} Z"/>'
-            f'<rect x="{gcx-25}" y="{gcy-74}" width="6" height="26" rx="3"/>'
-            f'<rect x="{gcx+19}" y="{gcy-74}" width="6" height="26" rx="3"/>'
-            f'<circle cx="{gcx-22}" cy="{gcy-78}" r="8"/><circle cx="{gcx+22}" cy="{gcy-78}" r="8"/></g>')
+            f'<circle cx="{cx-23}" cy="{cy-82}" r="8.5"/><circle cx="{cx+23}" cy="{cy-82}" r="8.5"/>'
+            f'<rect x="{cx-26}" y="{cy-80}" width="6" height="34" rx="3"/>'
+            f'<rect x="{cx+20}" y="{cy-80}" width="6" height="34" rx="3"/>'
+            f'<path d="M {cx-10} {cy-46} L {cx+10} {cy-46} L {cx+13} {cy+12} L {cx} {cy+106} L {cx-13} {cy+12} Z"/></g>'
+            f'<path d="M {cx-84} {cy-16} C {cx-64} {cy-50} {cx-26} {cy-52} {cx} {cy-51} '
+            f'C {cx+26} {cy-52} {cx+64} {cy-50} {cx+84} {cy-16}" fill="none" stroke="{col}" stroke-width="15" stroke-linecap="round"/>')
 
 def starfield(seed, col, n=64):
     rng = random.Random(seed)
