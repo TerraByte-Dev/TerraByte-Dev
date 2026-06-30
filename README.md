@@ -14,15 +14,6 @@
 
 I build local-first tools, odd experiments, and things that probably shouldn't exist — for the love of it.
 
-<details>
-<summary>◹ &nbsp; flip to schematic</summary>
-
-<img src="assets/hero-blueprint.svg?v=20260630" alt="TERRABYTE — blueprint reality" width="100%">
-
-<sub>the same machine, drafted — it's also what visitors on a light theme see up top.</sub>
-
-</details>
-
 </div>
 
 **TerraByte** &nbsp;·&nbsp; `T8` &nbsp;·&nbsp; technologist, tinkerer, perpetual builder.
