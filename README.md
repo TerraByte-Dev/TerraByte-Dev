@@ -7,7 +7,10 @@
 <div align="center">
 
 
-<img src="assets/hero-wow.svg?v=1" alt="TERRABYTE — technologist, builder, jack of all trades" width="100%">
+<picture>
+  <source media="(prefers-color-scheme: light)" srcset="assets/hero-blueprint.svg?v=1">
+  <img src="assets/hero-online.svg?v=1" alt="TERRABYTE — technologist, builder, jack of all trades" width="100%">
+</picture>
 
 I build local-first tools, odd experiments, and things that probably shouldn't exist — for the love of it.
 

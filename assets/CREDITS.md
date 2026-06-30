@@ -1,9 +1,16 @@
 # Credits — TERRABYTE.SYS profile
 
-- **Animated hero** (`hero-wow.svg`) — a rotating phosphor wireframe globe (the TerraByte mark)
-  with a glowing trident-T core, orbiting satellite, CRT scan-sweep, periodic RGB-split glitch,
-  and triple-stack bloom. Pure SVG (SMIL + internal CSS); honors prefers-reduced-motion.
+This profile uses the README format in a few ways most don't:
+
+- **Two realities** — `<picture>` + prefers-color-scheme swaps the whole hero by viewer theme.
+  Dark = the neon system (`hero-online.svg`); light = a technical blueprint of the same machine
+  (`hero-blueprint.svg`).
+- **Self-rewriting** — `.github/workflows/regen-hero.yml` re-runs `gen_hero.py` daily, so the
+  generative starfield reseeds, the DAY counter ticks, and the blueprint REV date updates. The
+  profile is never the same twice.
+- **Hero geometry** — one rotating phosphor wireframe globe (the TerraByte mark) with a glowing
+  trident-T core, orbiting satellite, CRT scan-sweep + glitch (online) / dimensioned drafting
+  callouts (blueprint). Pure animated SVG (SMIL + CSS); honors prefers-reduced-motion.
 - **Wordmark** — [VT323](https://fonts.google.com/specimen/VT323) (SIL OFL 1.1) vectorized to SVG
-  `<path>` data for sandbox-safe rendering on GitHub. No font binary redistributed.
-- **UI / mono type** — IBM Plex Mono (OFL), Share Tech Mono (OFL).
-- **Mint** — `#02EEAA`, sampled from the official TerraByte logo. Void `#000`.
+  `<path>` data (`assets/wordmarks.json`) for sandbox-safe rendering. No font binary redistributed.
+- **Mint** `#02EEAA`, sampled from the official TerraByte logo. UI/mono: IBM Plex Mono (OFL).
