@@ -8,8 +8,8 @@
 
 
 <picture>
-  <source media="(prefers-color-scheme: light)" srcset="assets/hero-blueprint.svg?v=20260715">
-  <img src="assets/hero-online.svg?v=20260715" alt="TERRABYTE — technologist, builder, jack of all trades" width="100%">
+  <source media="(prefers-color-scheme: light)" srcset="assets/hero-blueprint.svg?v=20260716">
+  <img src="assets/hero-online.svg?v=20260716" alt="TERRABYTE — technologist, builder, jack of all trades" width="100%">
 </picture>
 
 I build local-first tools, odd experiments, and things that probably shouldn't exist — for the love of it.
