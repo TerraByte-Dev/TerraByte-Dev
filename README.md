@@ -55,6 +55,6 @@ I build local-first tools, odd experiments, and things that probably shouldn't e
 
 <br>
 
-<div align="center"><img src="assets/rickroll.gif" width="300" alt="never gonna give you up" /></div>
+<div align="center"><img src="assets/fried.jpg?v=1" width="300" alt="deep-fried" /></div>
 
 </details>
