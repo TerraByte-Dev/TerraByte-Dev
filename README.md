@@ -2,6 +2,9 @@
      TerraByte-Dev · GitHub profile README · TERRABYTE.SYS phosphor aesthetic
      mint #02EEAA on void #000 · VT323 wordmark vectorized into the hero SVG
      Bump ?v=N on assets when you change them (busts GitHub's camo image cache).
+     Dark hero is hero-globe.webp: the Blender-rendered spinning globe composited into
+     the hero plate. Light hero stays the blueprint SVG. Source + scripts live in
+     Blender/02-Assets/TerraByteGlobeLoop.
 ═══════════════════════════════════════════════════════════════════════════ -->
 
 <div align="center">
@@ -9,7 +12,7 @@
 
 <picture>
   <source media="(prefers-color-scheme: light)" srcset="assets/hero-blueprint.svg?v=20260802">
-  <img src="assets/hero-online.svg?v=20260802" alt="TERRABYTE — technologist, builder, jack of all trades" width="100%">
+  <img src="assets/hero-globe.webp?v=20260802" alt="TERRABYTE — technologist, builder, jack of all trades" width="100%">
 </picture>
 
 I build local-first tools, odd experiments, and things that probably shouldn't exist — for the love of it.
