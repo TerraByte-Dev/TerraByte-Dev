@@ -132,7 +132,7 @@ STYLE = """
   }
 """
 
-def build(mode, seed, uptime, date, featured):
+def build(mode, seed, uptime, date, featured, stars=None):
     p = PAL[mode]; col = p["line"]; ink = p["ink"]; faint = p["faint"]
     bloom = ' filter="url(#bloom)"' if p["glow"] else ''
     soft = ' filter="url(#soft)"' if p["glow"] else ''
@@ -145,7 +145,10 @@ def build(mode, seed, uptime, date, featured):
     <rect width="{W}" height="{H}" fill="url(#grid)" mask="url(#spotmask)"/>
     <g>{starfield(seed, p['star'])}</g>'''
         deco_back = f'<circle cx="{gcx}" cy="{gcy}" r="{R+26}" fill="url(#halo)"/>'
+        star_txt = (f'<text x="{W//2}" y="{H-26}" text-anchor="middle" fill="{faint}" font-size="13" '
+                    f'letter-spacing="3">&#9733; {stars} STARS</text>') if stars is not None else ""
         stamp = (f'<text x="40" y="{H-26}" fill="{faint}" font-size="13" letter-spacing="3">DAY {uptime:04d}</text>'
+                 + star_txt +
                  f'<text x="{W-40}" y="{H-26}" text-anchor="end" fill="{faint}" font-size="13" letter-spacing="3">{date}</text>')
         sweep = f'<rect class="sweep" x="0" y="0" width="{W}" height="26" fill="url(#sweepg)"/>'
         overlays = f'<rect width="{W}" height="{H}" fill="url(#scan)"/><rect width="{W}" height="{H}" fill="url(#vig)"/>'
@@ -182,6 +185,7 @@ def build(mode, seed, uptime, date, featured):
       <text x="{tb_x+12}" y="{tb_y+19}" font-size="15" letter-spacing="2">FIG.1 &#8212; TERRABYTE MK.II</text>
       <text x="{tb_x+12}" y="{tb_y+46}">PROJECTION: ORTHO</text>
       <text x="{tb_x+12}" y="{tb_y+66}">SCALE 1:1</text>
+      <text x="{tb_x+150}" y="{tb_y+66}">{"&#9733; " + str(stars) + " STARS" if stars is not None else ""}</text>
       <text x="{tb_x+tb_w-108}" y="{tb_y+46}">REV {date}</text>
       <text x="{tb_x+tb_w-108}" y="{tb_y+66}">DAY {uptime:04d}</text>
     </g>'''
@@ -233,6 +237,8 @@ def main():
     ap.add_argument("--uptime", type=int, default=None)
     ap.add_argument("--date", default=None)
     ap.add_argument("--featured", default="")
+    ap.add_argument("--stars", type=int, default=None,
+                    help="total stargazers across owned non-fork repos")
     a = ap.parse_args()
     today = datetime.date.today()
     seed = a.seed if a.seed is not None else today.toordinal()
@@ -240,10 +246,10 @@ def main():
     date = a.date or today.strftime("%Y.%m.%d")
     modes = ["online", "blueprint"] if a.mode == "both" else [a.mode]
     for m in modes:
-        svg = build(m, seed, uptime, date, a.featured)
+        svg = build(m, seed, uptime, date, a.featured, a.stars)
         path = f"assets/hero-{m}.svg"
         open(path, "w", encoding="utf-8").write(svg)
-        print(f"wrote {path} ({len(svg)} bytes)  seed={seed} uptime={uptime} date={date}")
+        print(f"wrote {path} ({len(svg)} bytes)  seed={seed} uptime={uptime} date={date} stars={a.stars}")
 
 if __name__ == "__main__":
     main()
