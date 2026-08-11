@@ -11,8 +11,8 @@
 
 
 <picture>
-  <source media="(prefers-color-scheme: light)" srcset="assets/hero-blueprint.svg?v=20260810">
-  <img src="assets/hero-globe.webp?v=20260810" alt="TERRABYTE — technologist, builder, jack of all trades" width="100%">
+  <source media="(prefers-color-scheme: light)" srcset="assets/hero-blueprint.svg?v=20260811">
+  <img src="assets/hero-globe.webp?v=20260811" alt="TERRABYTE — technologist, builder, jack of all trades" width="100%">
 </picture>
 
 I build local-first tools, odd experiments, and things that probably shouldn't exist — for the love of it.
