@@ -15,7 +15,7 @@
   <img src="assets/hero-globe.webp?v=20261021" alt="TERRABYTE — technologist, builder, jack of all trades" width="100%">
 </picture>
 
-I build local-first tools, odd experiments, and things that probably shouldn't exist — for the love of it.
+I build local-first tools, odd experiments, and things that probably shouldn't exist    for the love of it.
 
 </div>
 
